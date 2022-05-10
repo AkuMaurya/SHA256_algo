@@ -2,7 +2,7 @@ import sys
 def translate(message):
                                                 #string characters to unicode values
     charcodes = [ord(c) for c in message]
-                                                #unicode values to 8-bit strings (removed binary indicator)
+                                                #unicode values to 8-bit strings
     bytes = []
     for char in charcodes:
         bytes.append(bin(char)[2:].zfill(8))
